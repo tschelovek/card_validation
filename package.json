@@ -1,0 +1,30 @@
+{
+  "name": "18_ecosystem",
+  "description": "Product catalog",
+  "type": "module",
+  "private": true,
+  "author": "Anatol",
+  "scripts": {
+    "dev": "parcel ./hw/index.html",
+    "build": "parcel build ./hw/index.html",
+    "bund": "browserify ./hw/src/js/index.js -p esmify > ./hw/src/js/index_bundled.js",
+    "watch": "watchify ./hw/src/js/index.js -p esmify -o ./hw/src/js/index_dev_bundled.js"
+  },
+  "dependencies": {
+    "creditcards": "^4.2.0",
+    "creditcards-types": "^3.3.0",
+    "email-validator": "^2.0.4",
+    "navigo": "^8.11.1",
+    "redom": "^3.29.1"
+  },
+  "devDependencies": {
+    "browserify": "^17.0.0",
+    "eslint": "^7.15.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-formatter-gitlab": "^2.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "esmify": "^2.1.1",
+    "parcel": "^2.8.2",
+    "watchify": "^4.0.0"
+  }
+}

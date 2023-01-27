@@ -1,0 +1,6 @@
+.idea
+.DS_store
+node_modules
+
+/dist
+/hw/src/js/index_dev_bundled.js
